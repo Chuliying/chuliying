@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import type { AppProps } from "next/app";
-import { Provider } from 'react-redux';
-import './index.scss'
+import './styles/index.scss'
 
 
 function MyApp({ Component, pageProps }: AppProps) {
