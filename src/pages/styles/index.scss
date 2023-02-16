@@ -223,16 +223,26 @@ p {
 .works__box {
     width: 100%;
     overflow: auto;
-    a:last-child li.main-margin-md {
-        margin-bottom: 0;
+    a:last-child {
+        li {
+            &.main-margin-md {
+                margin-bottom: 0;
+            }
+            @media (max-width: 900px) {
+                border-bottom: none;
+            }
+        }
     }
     li {
         display: flex;
         @media (max-width: 1200px) {
             flex-direction: column-reverse;
+            padding-bottom: 15px;
         }
         @media (max-width: 900px) {
-            margin-bottom: 30px;
+            margin-bottom: 45px;
+            padding-bottom: 25px;
+            border-bottom: dotted 1px var(--bg-color);
         }
         &:hover {
             .works__image {
@@ -269,6 +279,10 @@ p {
                 height: 35px;
                 width: auto;
                 filter: grayscale(0.8);
+
+                @media (max-width: 900px) {
+                    filter: grayscale(0);
+                }
             }
         }
     }

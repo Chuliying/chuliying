@@ -28,7 +28,12 @@ const About = () => {
                         2015-2020
                     </span>
                 </p>
-
+                <p>
+                    獨立接案
+                    <span className="time">
+                        2020-2023
+                    </span>
+                </p>
             </div>
 
             <h5 className='main-margin-sm'>
