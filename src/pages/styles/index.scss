@@ -74,7 +74,6 @@ h1.title {
         border-bottom: solid 1px var(--sub-color);
         padding-bottom: 7.5px;
         padding-top: 7.5px;
-        padding-left: 5px;
         &.main-margin-lg {
             margin-bottom: 45px;
         }
@@ -171,6 +170,7 @@ p {
             padding-right: 0;
             @media (max-width: 900px) {
                 margin-bottom: 0;
+                padding-right: 15px;
             }
         }
     }
