@@ -2,13 +2,13 @@ import { useEffect } from 'react';
 import Head from 'next/head'
 import type { AppProps } from "next/app";
 import './styles/index.scss'
-import ReactGA from 'react-ga'
+import ReactGA from 'react-ga4'
 
 function MyApp({ Component, pageProps }: AppProps) {
     useEffect((): void => {
         const gaTrackingId: string = 'G-Q5P2241XES';
         ReactGA.initialize(gaTrackingId)
-        ReactGA.pageview(window.location.pathname)
+        ReactGA.send({ hitType: "pageview", page: window.location.pathname });
     }, [])
     return (
         <>
