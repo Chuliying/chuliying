@@ -6,14 +6,13 @@ import ReactGA from 'react-ga4'
 
 function MyApp({ Component, pageProps }: AppProps) {
     useEffect((): void => {
-        const gaTrackingId: string = 'G-Q5P2241XES';
-        ReactGA.initialize(gaTrackingId)
+        ReactGA.initialize('G-Q5P2241XES')
         ReactGA.send({ hitType: "pageview", page: window.location.pathname });
     }, [])
     return (
         <>
             <Head>
-                <title>CHU LIYING</title>
+                <title>CHULIYING</title>
                 <link rel="shortcut icon" href={'./images/favicon.svg'} />
                 <link rel="icon" href={'./images/favicon.svg'} />
                 <meta name="description"
