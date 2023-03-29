@@ -40,13 +40,6 @@ const works: Work[] = [
         logo: require('../../public/images/logo/toyo.svg')
     },
     {
-        link: 'https://www.mattermemory.tw/',
-        company: '物的記憶',
-        jr: 'design,frontend',
-        skills: 'html, css, javascript, jquery',
-        logo: require('../../public/images/logo/mm.png')
-    },
-    {
         link: 'https://www.brewingarts.com.tw/',
         company: 'Brewing Arts',
         jr: 'design,frontend',
@@ -86,10 +79,15 @@ const Works = () => {
                                         <p className='p-2'>
                                             {work.skills}
                                         </p>
+                                        <span>
+                                            link to
+                                        </span>
                                     </div>
                                     <div className='works__image'>
                                         <Image src={work.logo} alt={work.company} />
+
                                     </div>
+
                                 </li>
                             </a>
 
