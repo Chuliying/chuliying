@@ -29,9 +29,9 @@ const About = () => {
                     </span>
                 </p>
                 <p>
-                    獨立接案
+                    青釀藝造
                     <span className="time">
-                        2020-2023
+                        2021-
                     </span>
                 </p>
             </div>
