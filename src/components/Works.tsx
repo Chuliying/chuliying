@@ -47,11 +47,11 @@ const works: Work[] = [
         logo: require('../../public/images/logo/ba.svg')
     },
     {
-        link: 'https://risingstories.asia/',
+        link: 'https://againstagain.com/',
         company: 'Rising Stories',
-        jr: 'frontend',
+        jr: 'design,frontend',
         skills: 'React, Nextjs, graphql',
-        logo: require('../../public/images/logo/rs.png')
+        logo: require('../../public/images/logo/aat.svg')
     },
 ]
 
