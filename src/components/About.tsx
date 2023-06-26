@@ -29,7 +29,7 @@ const About = () => {
                     </span>
                 </p>
                 <p>
-                    青釀藝造
+                    青釀藝造<span>前端工程師</span>
                     <span className="time">
                         2021-
                     </span>
