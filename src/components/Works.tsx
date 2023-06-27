@@ -48,7 +48,7 @@ const works: Work[] = [
     },
     {
         link: 'https://againstagain.com/',
-        company: 'Rising Stories',
+        company: 'Against Again Troupe',
         jr: 'design,frontend',
         skills: 'React, Nextjs, graphql',
         logo: require('../../public/images/logo/aat.svg')
