@@ -59,13 +59,6 @@ const works: Work[] = [
     skills: 'React, Nextjs, Typescript, restful',
     logo: require('../../public/images/logo/logo-wide.svg'),
   },
-  {
-    link: 'https://www.showmore.cc/',
-    company: 'Showmore 電商平台',
-    jr: 'frontend',
-    skills: 'React, Nextjs, restful',
-    logo: require('../../public/images/logo/smr.svg'),
-  },
 ]
 
 const Works = () => {
