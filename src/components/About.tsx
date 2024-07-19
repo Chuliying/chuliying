@@ -10,8 +10,12 @@ const About = () => {
       <h5 className='main-margin-sm'>EXPERIENCE</h5>
       <div className='main-margin-md'>
         <p>
+          鴻德能源<span>資深前端工程師</span>
+          <span className='time'>2024-Present</span>
+        </p>
+        <p>
           易可思科技<span>資深前端工程師</span>
-          <span className='time'>2023-Present</span>
+          <span className='time'>2023-2024</span>
         </p>
         <p>
           青釀藝造<span>前端工程師</span>
