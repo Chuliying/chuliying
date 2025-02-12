@@ -6,8 +6,8 @@ const About = () => {
       <h1 className='title text-inter main-margin-lg'>ABOUT</h1>
       <p className='main-margin-sm'>
         褚勵穎，銘傳大學商業設計系畢業，結合設計師的細膩思維與工程師的邏輯能力，擁有
-        新創、公部門外包、電子商務、品牌網站 等多元開發經驗。擅長
-        React、Next.js、React Query，具備設計、前後端協作與敏捷開發經驗。
+        新創、公部門網站/系統、電子商務、品牌網站等多元開發經驗。擅長
+        React、Next.js，具備設計、前後端協作與敏捷開發經驗。
       </p>
       <p className='main-margin-md'>
         目前任職於能源公司，擔任資深前端工程師，負責技術決策、系統改善與跨部門協作，並能在技術債環境下獨立開發與改善程式碼。此外，擁有多項成功的獨立接案經歷，具備高效解決問題與團隊溝通能力。
