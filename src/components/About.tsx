@@ -38,8 +38,7 @@ const About = () => {
 
       <h5 className='main-margin-sm'>SKILLS</h5>
       <p>
-        ReactJS、NextJS、RESTFUL、GraphQL、GIT、GCP、SEO、GA、google search
-        console、Figma、Illustrator、Photoshop
+        ReactJS、NextJS、RESTFUL、GraphQL、GIT、GCP、SEO、GA、GSC、Figma、Illustrator、Photoshop
       </p>
     </div>
   )
