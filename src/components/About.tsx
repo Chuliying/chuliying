@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div>
       <h1 className='title text-inter main-margin-lg'>ABOUT</h1>
-      <p className='main-margin-md'>
+      <p className='main-margin-sm'>
         褚勵穎，銘傳大學商業設計系畢業，結合設計師的細膩思維與工程師的邏輯能力，擁有
         新創、公部門外包、電子商務、品牌網站 等多元開發經驗。擅長
         React、Next.js、React Query，具備設計、前後端協作與敏捷開發經驗。
