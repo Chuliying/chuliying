@@ -53,11 +53,18 @@ const works: Work[] = [
     logo: require('../../public/images/logo/aat.svg'),
   },
   {
-    link: 'https://tava-ruby.vercel.app/',
+    link: 'https://www.tava.org.tw/',
     company: 'Tava 天使協會',
     jr: 'frontend',
     skills: 'React, Nextjs, Typescript, restful',
     logo: require('../../public/images/logo/logo-wide.svg'),
+  },
+  {
+    link: 'https://www.chlinmad.com/',
+    company: 'LCH Portfolio',
+    jr: 'design, frontend',
+    skills: 'React, Nextjs, restful',
+    logo: require('../../public/images/logo/ch-logo.svg'),
   },
 ]
 
