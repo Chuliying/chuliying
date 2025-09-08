@@ -2,3 +2,5 @@ node_modules
 build
 .next
 .git
+out/
+.DS_Store

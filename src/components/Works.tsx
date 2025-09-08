@@ -7,6 +7,7 @@ interface Work {
   jr: string
   skills: string
   logo: string
+  height?: number
 }
 
 const works: Work[] = [
@@ -66,6 +67,14 @@ const works: Work[] = [
     skills: 'React, Nextjs, restful',
     logo: require('../../public/images/logo/ch-logo.svg'),
   },
+  {
+    link: 'https://www.sgt.org.tw/',
+    company: 'SGT',
+    jr: 'design, frontend',
+    skills: 'React, Nextjs, Typescript',
+    logo: require('../../public/images/logo/sgt.svg'),
+    height: 40,
+  },
 ]
 
 const Works = () => {
@@ -85,8 +94,12 @@ const Works = () => {
                   <p className='p-2'>{work.skills}</p>
                   <span>link to</span>
                 </div>
-                <div className='works__image'>
-                  <Image src={work.logo} alt={work.company} />
+                <div className='works__image '>
+                  <Image
+                    src={work.logo}
+                    alt={work.company}
+                    height={work.height ?? 30}
+                  />
                 </div>
               </li>
             </a>

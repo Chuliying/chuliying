@@ -228,9 +228,7 @@ p {
             &.main-margin-md {
                 margin-bottom: 0;
             }
-            img {
-                height: 25px;
-            }
+
             @media (max-width: 900px) {
                 border-bottom: none;
             }
@@ -286,7 +284,6 @@ p {
             }
             img {
                 transition: all 0.5s;
-                height: 30px;
                 width: auto;
                 filter: grayscale(0.8);
 
