@@ -47,7 +47,7 @@ const Works = () => {
                     {work.description}
                   </p>
                   <span className="text-sm text-sub underline">
-                    ↗
+                    visit
                   </span>
                 </a>
               </div>
