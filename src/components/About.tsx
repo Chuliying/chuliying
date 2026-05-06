@@ -10,7 +10,7 @@ const About = () => {
 
       <div className="mb-11 max-[900px]:mb-7">
         {intro.split('\n\n').map((paragraph, i) => (
-          <p key={i} className="text-copy text-base leading-relaxed pb-2">
+          <p key={i} className="text-copy text-sm leading-relaxed pb-2">
             {paragraph}
           </p>
         ))}
@@ -22,13 +22,13 @@ const About = () => {
 
       <dl className="mb-11 max-[900px]:mb-7">
         {experience.map((entry) => (
-          <div key={entry.company} className="mb-11 max-[900px]:mb-7">
-            <dt className="text-copy text-base leading-relaxed pb-2">
-              {entry.company}
-              <span className="block font-bold text-sm text-muted">
+          <div key={entry.company} className="mb-11 max-[900px]:mb-3">
+            <dt className="text-copy text-sm leading-relaxed pb-2">
+              <span className="font-bold">{entry.company}</span>
+              <span className="block text-sm text-muted">
                 {entry.title}
               </span>
-              <span className="block text-muted text-sm mb-2 font-normal">
+              <span className="block text-muted text-xs mb-2 font-normal">
                 {entry.period}
               </span>
             </dt>

@@ -22,6 +22,9 @@ const logoMap: Record<string, unknown> = {
   '/images/logo/sgt.svg': sgtLogo,
 }
 
+const logoFrameClass =
+  'relative h-8 w-40 max-w-full shrink-0 max-[1200px]:w-36'
+
 const Works = () => {
   return (
     <section>
@@ -43,7 +46,7 @@ const Works = () => {
                   rel="noreferrer"
                   className="block"
                 >
-                  <p className="text-copy text-base leading-relaxed pb-2">
+                  <p className="text-copy text-sm leading-relaxed pb-2">
                     {work.description}
                   </p>
                   <span className="text-sm text-sub underline">
@@ -52,16 +55,17 @@ const Works = () => {
                 </a>
               </div>
 
-              <div className="w-1/2 flex items-start max-[1200px]:w-full max-[1200px]:items-start">
-                <Image
-                  src={logoMap[work.logo] as string}
-                  alt={work.company}
-                  height={20}
-                  width={0}
-                  unoptimized
-                  style={{ width: 'auto', maxHeight: '20px' }}
-                  className="grayscale-[0.8] hover:grayscale-0 transition-all duration-500 max-[900px]:grayscale-0"
-                />
+              <div className="w-1/2 flex items-start justify-end max-[1200px]:w-full">
+                <div className={logoFrameClass}>
+                  <Image
+                    src={logoMap[work.logo] as string}
+                    alt={work.company}
+                    fill
+                    unoptimized
+                    sizes="160px"
+                    className="object-contain object-right grayscale-[0.8] hover:grayscale-0 transition-all duration-500 max-[900px]:grayscale-0"
+                  />
+                </div>
               </div>
             </article>
           </li>
