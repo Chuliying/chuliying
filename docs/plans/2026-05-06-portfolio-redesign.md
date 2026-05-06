@@ -10,6 +10,10 @@
 
 ---
 
+> **Dependency status (already completed):** Unused packages removed (Redux, React Router, googleapis, framer-motion, gsap, react-scripts). Safe updates applied: Next.js 13.5.11, React 18.3.1, sharp 0.34.5, react-ga4 2.1.0. Remaining CVEs are all in Next.js 13 — require Next 16 upgrade (separate scope).
+
+---
+
 ## File Map
 
 | Action | Path | Responsibility |
