@@ -1,16 +1,16 @@
 import React from 'react'
-import Image from 'next/image'
 
 const Contact = () => {
-    return (
-        <div>
-            <h1 className="title text-inter">
-                <a href="mailto:chuliyinn@gmail.com">mailto:chuliying
-                    {/* <Image src={require('../../public/images/contact.svg')} alt="contact me" /> */}
-                </a>
-            </h1>
-        </div>
-    )
+  return (
+    <div>
+      <a
+        href="mailto:chuliyinn@gmail.com"
+        className="font-inter text-sub text-[16px] font-bold hover:opacity-70 transition-opacity"
+      >
+        mailto:chuliying
+      </a>
+    </div>
+  )
 }
 
 export default Contact
