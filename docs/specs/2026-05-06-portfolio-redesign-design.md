@@ -116,39 +116,40 @@ Each entry: company name + one English sentence (role + technical decision). No 
 
 ```
 The News Lens
-Built and maintained frontend for a high-traffic bilingual news platform;
-contributed to design system and component standardization across teams.
+Developed and maintained frontend for a high-traffic bilingual news platform;
+designed and implemented native advertising products and editorial ad placement
+guidelines end-to-end.
 
 everylittled
-Developed editorial frontend for a lifestyle media brand under TNL Group,
-focusing on responsive layout and cross-browser consistency.
+Designed and launched a distinctive brand identity for a lifestyle media
+property; defined a lightweight frontend architecture suited to a lean
+resource environment and delivered under tight timeline.
 
 TNL Media Group
-Implemented corporate site with cross-brand design consistency for the
-parent company of multiple digital media properties.
+Led design, PM, and frontend for the group's IPO-facing corporate site;
+aggregated and standardized content across all subsidiary brands into a
+unified data format for centralized presentation.
 
 Toyo Water
-Delivered full-stack frontend for an industrial B2B website, handling
-both design and implementation independently.
+Supported digital transformation for a traditional manufacturer; rebuilt
+and modernized the corporate site with full data and product migration.
 
 Brewing Arts
-Architected a Next.js site for a craft beverage brand, implementing
-SSG for performance and CMS integration for content management.
+Designed and built a full-stack Next.js site for an arts and craft beverage
+brand; shaped the visual identity and brand tone through art-directed web design.
 
 Against Again Troupe
 Built a performant theatre company site with GraphQL data layer and
 TypeScript throughout; handled both UX design and engineering.
 
-Tava Angel Association
-Developed a nonprofit membership platform with RESTful API integration
-and TypeScript-enforced data contracts.
+Tava
+Designed and built a volunteer platform; handled UX design and RESTful
+API integration end-to-end.
 
 SGT
-Designed and engineered a cultural organization site with emphasis on
-typography hierarchy and multilingual content structure.
+Designed and engineered a site for a screenwriters' association with
+emphasis on typography hierarchy and multilingual content structure.
 ```
-
-**Visual treatment:** Early jQuery-era projects (TNL, everylittled, TNL Media Group, Toyo Water) rendered in `text-sm text-text-muted` to naturally de-emphasize.
 
 ---
 
