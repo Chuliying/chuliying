@@ -2,17 +2,16 @@ import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx}',
-    './src/components/**/*.{js,ts,jsx,tsx}',
+    './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
       colors: {
         theme: '#3a4f67',
         sub: '#d87e57',
-        'text-base': '#333333',
-        'text-muted': '#707070',
-        bg: '#c2c5bc',
+        copy: '#333333',
+        muted: '#707070',
+        canvas: '#c2c5bc',
         surface: '#f4f4f4',
       },
       fontFamily: {
