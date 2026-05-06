@@ -31,40 +31,38 @@ const Works = () => {
 
       <ul>
         {works.map((work) => (
-          <li
-            key={work.company}
-            className="border-b border-[#ddd] last:border-none"
-          >
-            <article className="py-5 group">
-              {/* Header row: logo + company name + link arrow */}
-              <div className="flex items-center gap-3 mb-2">
-                <Image
-                  src={logoMap[work.logo] as string}
-                  alt={work.company}
-                  height={work.logoHeight ? Math.round(work.logoHeight * 0.55) : 17}
-                  width={0}
-                  unoptimized
-                  style={{ width: 'auto' }}
-                  className="grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300 shrink-0"
-                />
-                <h3 className="font-inter text-theme text-[15px] font-semibold leading-none">
+          <li key={work.company} className="mb-11 max-[900px]:mb-[45px] max-[900px]:pb-[25px] max-[900px]:border-b max-[900px]:border-dotted max-[900px]:border-canvas last:mb-0 last:border-none">
+            <article className="flex max-[1200px]:flex-col-reverse">
+              <div className="flex-1 lg:w-full lg:flex-auto">
+                <h3 className="font-inter text-theme text-[17px] mb-4 sm:mb-2">
                   {work.company}
                 </h3>
                 <a
                   href={work.link}
                   target="_blank"
                   rel="noreferrer"
-                  aria-label={`Visit ${work.company}`}
-                  className="ml-auto text-muted hover:text-sub transition-colors text-[13px] shrink-0"
+                  className="block"
                 >
-                  ↗
+                  <p className="text-copy text-[16px] leading-[1.65] pb-[7.5px]">
+                    {work.description}
+                  </p>
+                  <span className="text-[14px] text-sub underline">
+                    link to
+                  </span>
                 </a>
               </div>
 
-              {/* Description */}
-              <p className="text-muted text-[13px] leading-[1.6] pl-0">
-                {work.description}
-              </p>
+              <div className="w-1/2 flex justify-center flex-col max-[1200px]:w-full max-[1200px]:pb-4 max-[1200px]:justify-start max-[900px]:mb-4">
+                <Image
+                  src={logoMap[work.logo] as string}
+                  alt={work.company}
+                  height={work.logoHeight ?? 30}
+                  width={0}
+                  unoptimized
+                  style={{ width: 'auto' }}
+                  className="grayscale-[0.8] hover:grayscale-0 transition-all duration-500 max-[900px]:grayscale-0"
+                />
+              </div>
             </article>
           </li>
         ))}
