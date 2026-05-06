@@ -34,15 +34,15 @@ const Works = () => {
           <li key={work.company} className="mb-11 sm:mb-[45px] sm:pb-[25px] sm:border-b sm:border-dotted sm:border-canvas last:mb-0 last:border-none">
             <article className="flex lg:flex-col-reverse">
               <div className="flex-1 lg:w-full lg:flex-auto">
+                <h3 className="font-inter text-theme text-[17px] mb-4 sm:mb-2">
+                  {work.company}
+                </h3>
                 <a
                   href={work.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="group block"
+                  className="block"
                 >
-                  <h3 className="font-inter text-theme text-[17px] mb-4 sm:mb-2">
-                    {work.company}
-                  </h3>
                   <p className="text-copy text-[16px] leading-[1.65] pb-[7.5px]">
                     {work.description}
                   </p>
@@ -58,7 +58,9 @@ const Works = () => {
                   alt={work.company}
                   height={work.logoHeight ?? 30}
                   width={0}
-                  className="grayscale-[0.8] hover:grayscale-0 transition-all duration-500 sm:grayscale-0 w-auto"
+                  unoptimized
+                  style={{ width: 'auto' }}
+                  className="grayscale-[0.8] hover:grayscale-0 transition-all duration-500 sm:grayscale-0"
                 />
               </div>
             </article>
