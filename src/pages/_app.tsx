@@ -26,6 +26,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="Frontend Lead with 10+ years building production web applications across media, energy, and the arts."
         />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://chuliying.vercel.app/" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Chu Liying — Frontend Lead" />
         <meta
@@ -33,7 +34,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="Frontend Lead with 10+ years building production web applications across media, energy, and the arts."
         />
       </Head>
-      <div className="min-h-screen bg-canvas pt-[15px] pr-[15px] flex overflow-hidden sm:pt-[5px] sm:pr-[5px]">
+      <div className="min-h-screen bg-canvas pt-[15px] pr-[15px] flex overflow-x-hidden sm:pt-[5px] sm:pr-[5px]">
         <Component {...pageProps} />
       </div>
     </>
