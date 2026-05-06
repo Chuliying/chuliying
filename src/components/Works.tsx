@@ -37,7 +37,7 @@ const Works = () => {
           <li key={work.company} className="mb-11 max-[900px]:mb-8 max-[900px]:pb-8 max-[900px]:border-b max-[900px]:border-dotted max-[900px]:border-canvas last:mb-0 last:pb-0 last:border-none">
             <article className="flex gap-10 max-[1200px]:flex-col-reverse max-[1200px]:gap-4">
               <div className="flex-[2]">
-                <h3 className="font-inter text-theme text-base mb-3 max-[900px]:mb-2">
+                <h3 className="font-inter text-theme font-bold text-base mb-3 max-[900px]:mb-2">
                   {work.company}
                 </h3>
                 <a
