@@ -4,31 +4,31 @@ import { intro, experience } from '../data/about'
 const About = () => {
   return (
     <div>
-      <h2 className="font-inter text-sub font-bold text-[16px] mb-16 max-[900px]:mb-8 max-[900px]:border-t max-[900px]:border-b max-[900px]:border-sub max-[900px]:py-[7.5px]">
+      <h2 className="font-inter text-sub font-bold text-base mb-16 max-[900px]:mb-8 max-[900px]:border-t max-[900px]:border-b max-[900px]:border-sub max-[900px]:py-2">
         ABOUT
       </h2>
 
       <div className="mb-11 max-[900px]:mb-7">
         {intro.split('\n\n').map((paragraph, i) => (
-          <p key={i} className="text-copy text-[16px] leading-[1.65] pb-[7.5px]">
+          <p key={i} className="text-copy text-base leading-relaxed pb-2">
             {paragraph}
           </p>
         ))}
       </div>
 
-      <h3 className="text-theme text-[14px] font-normal mb-4 max-[900px]:mb-2">
+      <h3 className="text-theme text-sm font-normal mb-4 max-[900px]:mb-2">
         EXPERIENCE
       </h3>
 
       <dl className="mb-11 max-[900px]:mb-7">
         {experience.map((entry) => (
           <div key={entry.company} className="mb-11 max-[900px]:mb-7">
-            <dt className="text-copy text-[16px] leading-[1.65] pb-[7.5px]">
+            <dt className="text-copy text-base leading-relaxed pb-2">
               {entry.company}
-              <span className="block font-bold text-[14px] text-muted">
+              <span className="block font-bold text-sm text-muted">
                 {entry.title}
               </span>
-              <span className="block text-muted text-[14px] mb-[7.5px] font-normal">
+              <span className="block text-muted text-sm mb-2 font-normal">
                 {entry.period}
               </span>
             </dt>
@@ -37,7 +37,7 @@ const About = () => {
                 {entry.bullets.map((bullet, i) => (
                   <li
                     key={i}
-                    className="text-[14px] text-muted leading-[1.65] before:content-['-'] before:mr-2"
+                    className="text-sm text-muted leading-relaxed before:content-['-'] before:mr-2"
                   >
                     {bullet}
                   </li>
