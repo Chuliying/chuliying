@@ -5,7 +5,7 @@ export interface ExperienceEntry {
   bullets: string[]
 }
 
-export const intro = `10+ years building production-grade web applications across startups, media, public sector, and energy — from pixel-perfect interfaces to scalable frontend architectures.
+export const intro = `10+ years building production-grade web applications across startups, e-commerce, media, public sector, and energy — from pixel-perfect interfaces to scalable frontend architectures.
 
 Currently leading frontend development at an energy company, driving technical decisions, resolving legacy debt, and establishing cross-team development standards. Background in commercial design informs a consistent focus on both engineering rigor and user experience quality.
 
