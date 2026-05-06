@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="Frontend Lead with 10+ years building production web applications across media, energy, and the arts."
         />
       </Head>
-      <div className="min-h-screen bg-canvas pt-[15px] pr-[15px] flex overflow-x-hidden sm:pt-[5px] sm:pr-[5px]">
+      <div className="min-h-screen bg-canvas pt-[15px] pr-[15px] flex overflow-x-hidden max-[900px]:pt-[5px] max-[900px]:pr-[5px]">
         <Component {...pageProps} />
       </div>
     </>

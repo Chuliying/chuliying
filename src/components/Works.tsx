@@ -25,14 +25,14 @@ const logoMap: Record<string, unknown> = {
 const Works = () => {
   return (
     <section>
-      <h2 className="font-inter text-sub font-bold text-[16px] mb-16 sm:mb-8 sm:border-t sm:border-b sm:border-sub sm:py-[7.5px]">
+      <h2 className="font-inter text-sub font-bold text-[16px] mb-16 max-[900px]:mb-8 max-[900px]:border-t max-[900px]:border-b max-[900px]:border-sub max-[900px]:py-[7.5px]">
         WORKS
       </h2>
 
       <ul>
         {works.map((work) => (
-          <li key={work.company} className="mb-11 sm:mb-[45px] sm:pb-[25px] sm:border-b sm:border-dotted sm:border-canvas last:mb-0 last:border-none">
-            <article className="flex lg:flex-col-reverse">
+          <li key={work.company} className="mb-11 max-[900px]:mb-[45px] max-[900px]:pb-[25px] max-[900px]:border-b max-[900px]:border-dotted max-[900px]:border-canvas last:mb-0 last:border-none">
+            <article className="flex max-[1200px]:flex-col-reverse">
               <div className="flex-1 lg:w-full lg:flex-auto">
                 <h3 className="font-inter text-theme text-[17px] mb-4 sm:mb-2">
                   {work.company}
@@ -52,7 +52,7 @@ const Works = () => {
                 </a>
               </div>
 
-              <div className="w-1/2 flex justify-center flex-col lg:w-full lg:pb-4 lg:justify-start sm:mb-4">
+              <div className="w-1/2 flex justify-center flex-col max-[1200px]:w-full max-[1200px]:pb-4 max-[1200px]:justify-start max-[900px]:mb-4">
                 <Image
                   src={logoMap[work.logo] as string}
                   alt={work.company}
@@ -60,7 +60,7 @@ const Works = () => {
                   width={0}
                   unoptimized
                   style={{ width: 'auto' }}
-                  className="grayscale-[0.8] hover:grayscale-0 transition-all duration-500 sm:grayscale-0"
+                  className="grayscale-[0.8] hover:grayscale-0 transition-all duration-500 max-[900px]:grayscale-0"
                 />
               </div>
             </article>

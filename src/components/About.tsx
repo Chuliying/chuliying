@@ -4,11 +4,11 @@ import { intro, experience } from '../data/about'
 const About = () => {
   return (
     <div>
-      <h2 className="font-inter text-sub font-bold text-[16px] mb-16 sm:mb-8 sm:border-t sm:border-b sm:border-sub sm:py-[7.5px]">
+      <h2 className="font-inter text-sub font-bold text-[16px] mb-16 max-[900px]:mb-8 max-[900px]:border-t max-[900px]:border-b max-[900px]:border-sub max-[900px]:py-[7.5px]">
         ABOUT
       </h2>
 
-      <div className="mb-11 sm:mb-7">
+      <div className="mb-11 max-[900px]:mb-7">
         {intro.split('\n\n').map((paragraph, i) => (
           <p key={i} className="text-copy text-[16px] leading-[1.65] pb-[7.5px]">
             {paragraph}
@@ -16,13 +16,13 @@ const About = () => {
         ))}
       </div>
 
-      <h3 className="text-theme text-[14px] font-normal mb-4 sm:mb-2">
+      <h3 className="text-theme text-[14px] font-normal mb-4 max-[900px]:mb-2">
         EXPERIENCE
       </h3>
 
-      <dl className="mb-11 sm:mb-7">
+      <dl className="mb-11 max-[900px]:mb-7">
         {experience.map((entry) => (
-          <div key={entry.company} className="mb-11 sm:mb-7">
+          <div key={entry.company} className="mb-11 max-[900px]:mb-7">
             <dt className="text-copy text-[16px] leading-[1.65] pb-[7.5px]">
               {entry.company}
               <span className="block font-bold text-[14px] text-muted">
