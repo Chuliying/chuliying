@@ -12,7 +12,10 @@
       "Bash(grep -v \"^[A-Za-z0-9+/=]\\\\{40,\\\\}\")",
       "Bash(git ls-tree *)",
       "Bash(kill %1)",
-      "Read(//tmp/**)"
+      "Read(//tmp/**)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(curl -s http://localhost:3003)",
+      "Bash(git revert *)"
     ]
   }
 }
