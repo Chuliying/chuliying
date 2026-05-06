@@ -3,7 +3,8 @@ import Image from 'next/image'
 import Works from '../components/Works'
 import About from '../components/About'
 import Contact from '../components/Contact'
-import photo from '../../public/images/chuliying.jpg'
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const photo = require('../../public/images/chuliying.jpg')
 
 const IndexPage = () => {
   return (

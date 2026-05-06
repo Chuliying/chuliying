@@ -11,7 +11,7 @@ import aatLogo from '../../public/images/logo/aat.svg'
 import tavaLogo from '../../public/images/logo/logo-wide.svg'
 import sgtLogo from '../../public/images/logo/sgt.svg'
 
-const logoMap: Record<string, any> = {
+const logoMap: Record<string, unknown> = {
   '/images/logo/tnl.svg': tnlLogo,
   '/images/logo/eld.svg': eldLogo,
   '/images/logo/tnl-media-group.svg': tnlMediaLogo,
@@ -54,9 +54,10 @@ const Works = () => {
 
               <div className="w-1/2 flex justify-center flex-col lg:w-full lg:pb-4 lg:justify-start sm:mb-4">
                 <Image
-                  src={logoMap[work.logo]}
+                  src={logoMap[work.logo] as string}
                   alt={work.company}
                   height={work.logoHeight ?? 30}
+                  width={0}
                   className="grayscale-[0.8] hover:grayscale-0 transition-all duration-500 sm:grayscale-0 w-auto"
                 />
               </div>
