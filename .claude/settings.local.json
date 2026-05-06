@@ -15,7 +15,9 @@
       "Read(//tmp/**)",
       "Bash(curl -s http://localhost:3000)",
       "Bash(curl -s http://localhost:3003)",
-      "Bash(git revert *)"
+      "Bash(git revert *)",
+      "Bash(git push *)",
+      "Bash(npm info *)"
     ]
   }
 }
