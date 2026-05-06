@@ -361,7 +361,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           content="Frontend Lead with 10+ years building production web applications across media, energy, and the arts."
         />
       </Head>
-      <div className="min-h-screen bg-bg pt-[15px] pr-[15px] flex overflow-hidden sm:pt-[5px] sm:pr-[5px]">
+      <div className="min-h-screen bg-canvas pt-[15px] pr-[15px] flex overflow-hidden sm:pt-[5px] sm:pr-[5px]">
         <Component {...pageProps} />
       </div>
     </>
@@ -461,7 +461,7 @@ const About = () => {
 
       <div className="mb-11 sm:mb-7">
         {intro.split('\n\n').map((paragraph, i) => (
-          <p key={i} className="text-text-base text-[16px] leading-[1.65] pb-[7.5px]">
+          <p key={i} className="text-copy text-[16px] leading-[1.65] pb-[7.5px]">
             {paragraph}
           </p>
         ))}
@@ -474,12 +474,12 @@ const About = () => {
       <dl className="mb-11 sm:mb-7">
         {experience.map((entry) => (
           <div key={entry.company} className="mb-11 sm:mb-7">
-            <dt className="text-text-base text-[16px] leading-[1.65] pb-[7.5px]">
+            <dt className="text-copy text-[16px] leading-[1.65] pb-[7.5px]">
               {entry.company}
-              <span className="block font-bold text-[14px] text-text-muted">
+              <span className="block font-bold text-[14px] text-muted">
                 {entry.title}
               </span>
-              <span className="block text-text-muted text-[14px] mb-[7.5px] font-normal">
+              <span className="block text-muted text-[14px] mb-[7.5px] font-normal">
                 {entry.period}
               </span>
             </dt>
@@ -488,7 +488,7 @@ const About = () => {
                 {entry.bullets.map((bullet, i) => (
                   <li
                     key={i}
-                    className="text-[14px] text-text-muted leading-[1.65] before:content-['-'] before:mr-2"
+                    className="text-[14px] text-muted leading-[1.65] before:content-['-'] before:mr-2"
                   >
                     {bullet}
                   </li>
@@ -563,7 +563,7 @@ const Works = () => {
 
       <ul>
         {works.map((work) => (
-          <li key={work.company} className="mb-11 sm:mb-[45px] sm:pb-[25px] sm:border-b sm:border-dotted sm:border-bg last:mb-0 last:border-none">
+          <li key={work.company} className="mb-11 sm:mb-[45px] sm:pb-[25px] sm:border-b sm:border-dotted sm:border-canvas last:mb-0 last:border-none">
             <article className="flex lg:flex-col-reverse">
               <div className="flex-1 lg:w-full lg:flex-auto">
                 <a
@@ -575,7 +575,7 @@ const Works = () => {
                   <h3 className="font-inter text-theme text-[17px] mb-4 sm:mb-2">
                     {work.company}
                   </h3>
-                  <p className="text-text-base text-[16px] leading-[1.65] pb-[7.5px]">
+                  <p className="text-copy text-[16px] leading-[1.65] pb-[7.5px]">
                     {work.description}
                   </p>
                   <span className="text-[14px] text-sub underline">
