@@ -1,112 +1,70 @@
 import React from 'react'
 import Image from 'next/image'
+import { works } from '../data/works'
 
-interface Work {
-  link: string
-  company: string
-  jr: string
-  skills: string
-  logo: string
-  height?: number
+import tnlLogo from '../../public/images/logo/tnl.svg'
+import eldLogo from '../../public/images/logo/eld.svg'
+import tnlMediaLogo from '../../public/images/logo/tnl-media-group.svg'
+import toyoLogo from '../../public/images/logo/toyo.svg'
+import baLogo from '../../public/images/logo/ba.svg'
+import aatLogo from '../../public/images/logo/aat.svg'
+import tavaLogo from '../../public/images/logo/logo-wide.svg'
+import sgtLogo from '../../public/images/logo/sgt.svg'
+
+const logoMap: Record<string, any> = {
+  '/images/logo/tnl.svg': tnlLogo,
+  '/images/logo/eld.svg': eldLogo,
+  '/images/logo/tnl-media-group.svg': tnlMediaLogo,
+  '/images/logo/toyo.svg': toyoLogo,
+  '/images/logo/ba.svg': baLogo,
+  '/images/logo/aat.svg': aatLogo,
+  '/images/logo/logo-wide.svg': tavaLogo,
+  '/images/logo/sgt.svg': sgtLogo,
 }
-
-const works: Work[] = [
-  {
-    link: 'https://www.thenewslens.com/',
-    company: 'The News Lens',
-    jr: 'design,frontend',
-    skills: 'html, css, javascript, jquery',
-    logo: require('../../public/images/logo/tnl.svg'),
-  },
-  {
-    link: 'https://everylittled.com/',
-    company: 'everylittled',
-    jr: 'design,frontend',
-    skills: 'html, css, javascript, jquery',
-    logo: require('../../public/images/logo/eld.svg'),
-  },
-  {
-    link: 'https://www.tnlmedia.com/',
-    company: 'The News Lens Media Group',
-    jr: 'design,frontend',
-    skills: 'html, css, javascript, jquery',
-    logo: require('../../public/images/logo/tnl-media-group.svg'),
-  },
-  {
-    link: 'https://www.toyo-autech.com.tw/web/index.html',
-    company: 'Toyo Water',
-    jr: 'design,frontend',
-    skills: 'html, css, javascript, jquery',
-    logo: require('../../public/images/logo/toyo.svg'),
-  },
-  {
-    link: 'https://www.brewingarts.com.tw/',
-    company: 'Brewing Arts',
-    jr: 'design,frontend',
-    skills: 'React, Nextjs',
-    logo: require('../../public/images/logo/ba.svg'),
-  },
-  {
-    link: 'https://againstagain.com/',
-    company: 'Against Again Troupe',
-    jr: 'design,frontend',
-    skills: 'React, Nextjs, Typescript, graphql',
-    logo: require('../../public/images/logo/aat.svg'),
-  },
-  {
-    link: 'https://www.tava.org.tw/',
-    company: 'Tava 天使協會',
-    jr: 'frontend',
-    skills: 'React, Nextjs, Typescript, restful',
-    logo: require('../../public/images/logo/logo-wide.svg'),
-  },
-  {
-    link: 'https://www.chlinmad.com/',
-    company: 'LCH Portfolio',
-    jr: 'design, frontend',
-    skills: 'React, Nextjs, restful',
-    logo: require('../../public/images/logo/ch-logo.svg'),
-  },
-  {
-    link: 'https://www.sgt.org.tw/',
-    company: 'SGT',
-    jr: 'design, frontend',
-    skills: 'React, Nextjs, Typescript',
-    logo: require('../../public/images/logo/sgt.svg'),
-    height: 40,
-  },
-]
 
 const Works = () => {
   return (
-    <>
-      <div>
-        <h1 className='title main-margin-lg text-inter'>WORKS</h1>
-      </div>
-      <div className='works__box'>
-        <ul>
-          {works.map((work, index: number) => (
-            <a target='_blank' rel='noreferrer' href={work.link} key={index}>
-              <li className='main-margin-md'>
-                <div className='works__des'>
-                  <h4 className='main-margin-sm text-inter'>{work.company}</h4>
-                  <p>{work.jr}</p>
-                  <p className='p-2'>{work.skills}</p>
-                  <span>link to</span>
-                </div>
-                <div className='works__image '>
-                  <Image
-                    src={work.logo}
-                    alt={work.company}
-                    height={work.height ?? 30}
-                  />
-                </div>
-              </li>
-            </a>
-          ))}
-        </ul>
-      </div>
-    </>
+    <section>
+      <h2 className="font-inter text-sub font-bold text-[16px] mb-16 sm:mb-8 sm:border-t sm:border-b sm:border-sub sm:py-[7.5px]">
+        WORKS
+      </h2>
+
+      <ul>
+        {works.map((work) => (
+          <li key={work.company} className="mb-11 sm:mb-[45px] sm:pb-[25px] sm:border-b sm:border-dotted sm:border-canvas last:mb-0 last:border-none">
+            <article className="flex lg:flex-col-reverse">
+              <div className="flex-1 lg:w-full lg:flex-auto">
+                <a
+                  href={work.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group block"
+                >
+                  <h3 className="font-inter text-theme text-[17px] mb-4 sm:mb-2">
+                    {work.company}
+                  </h3>
+                  <p className="text-copy text-[16px] leading-[1.65] pb-[7.5px]">
+                    {work.description}
+                  </p>
+                  <span className="text-[14px] text-sub underline">
+                    link to
+                  </span>
+                </a>
+              </div>
+
+              <div className="w-1/2 flex justify-center flex-col lg:w-full lg:pb-4 lg:justify-start sm:mb-4">
+                <Image
+                  src={logoMap[work.logo]}
+                  alt={work.company}
+                  height={work.logoHeight ?? 30}
+                  className="grayscale-[0.8] hover:grayscale-0 transition-all duration-500 sm:grayscale-0 w-auto"
+                />
+              </div>
+            </article>
+          </li>
+        ))}
+      </ul>
+    </section>
   )
 }
 
