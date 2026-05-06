@@ -34,10 +34,10 @@ const Works = () => {
 
       <ul>
         {works.map((work) => (
-          <li key={work.company} className="mb-11 max-[900px]:mb-11 max-[900px]:pb-6 max-[900px]:border-b max-[900px]:border-dotted max-[900px]:border-canvas last:mb-0 last:border-none">
-            <article className="flex gap-10 max-[1200px]:flex-col-reverse max-[1200px]:gap-3">
-              <div className="flex-1">
-                <h3 className="font-inter text-theme text-lg mb-4 max-[900px]:mb-2">
+          <li key={work.company} className="mb-11 max-[900px]:mb-8 max-[900px]:pb-8 max-[900px]:border-b max-[900px]:border-dotted max-[900px]:border-canvas last:mb-0 last:pb-0 last:border-none">
+            <article className="flex gap-10 max-[1200px]:flex-col-reverse max-[1200px]:gap-4">
+              <div className="flex-[2]">
+                <h3 className="font-inter text-theme text-base mb-3 max-[900px]:mb-2">
                   {work.company}
                 </h3>
                 <a
@@ -46,7 +46,7 @@ const Works = () => {
                   rel="noreferrer"
                   className="block"
                 >
-                  <p className="text-copy text-sm leading-relaxed pb-2">
+                  <p className="text-copy text-sm mb-4">
                     {work.description}
                   </p>
                   <span className="text-sm text-sub underline">
@@ -55,7 +55,7 @@ const Works = () => {
                 </a>
               </div>
 
-              <div className="w-1/2 flex items-start justify-end max-[1200px]:w-full">
+              <div className="flex-1 flex items-start justify-end max-[1200px]:w-full max-[900px]:justify-start">
                 <div className={logoFrameClass}>
                   <Image
                     src={logoMap[work.logo] as string}
@@ -63,7 +63,7 @@ const Works = () => {
                     fill
                     unoptimized
                     sizes="160px"
-                    className="object-contain object-right grayscale-[0.8] hover:grayscale-0 transition-all duration-500 max-[900px]:grayscale-0"
+                    className="object-contain object-right max-[900px]:object-left grayscale-[0.8] hover:grayscale-0 transition-all duration-500 max-[900px]:grayscale-0"
                   />
                 </div>
               </div>

@@ -8,38 +8,39 @@ const About = () => {
         ABOUT
       </h2>
 
-      <div className="mb-11 max-[900px]:mb-7">
+      <div className="mb-11 max-[900px]:mb-8">
         {intro.split('\n\n').map((paragraph, i) => (
-          <p key={i} className="text-copy text-sm leading-relaxed pb-2">
+          <p key={i} className="text-copy text-sm leading-relaxed mb-4 last:mb-0">
             {paragraph}
           </p>
         ))}
       </div>
 
-      <h3 className="text-theme text-sm font-normal mb-4 max-[900px]:mb-2">
+      <h3 className="text-theme text-sm font-normal mb-6 max-[900px]:mb-4">
         EXPERIENCE
       </h3>
 
-      <dl className="mb-11 max-[900px]:mb-7">
+      <dl className="mb-11 max-[900px]:mb-8">
         {experience.map((entry) => (
-          <div key={entry.company} className="mb-11 max-[900px]:mb-3">
-            <dt className="text-copy text-sm leading-relaxed pb-2">
+          <div key={entry.company} className="mb-11 max-[900px]:mb-8 last:mb-0">
+            <dt className="text-copy text-sm leading-relaxed mb-3">
               <span className="font-bold">{entry.company}</span>
-              <span className="block text-sm text-muted">
+              <span className="block text-sm text-muted mt-1">
                 {entry.title}
               </span>
-              <span className="block text-muted text-xs mb-2 font-normal">
+              <span className="block text-muted text-xs font-normal">
                 {entry.period}
               </span>
             </dt>
             <dd>
-              <ul className="list-none">
+              <ul className="list-none flex flex-col gap-2">
                 {entry.bullets.map((bullet, i) => (
                   <li
                     key={i}
-                    className="text-sm text-muted leading-relaxed before:content-['-'] before:mr-2"
+                    className="text-sm text-muted flex"
                   >
-                    {bullet}
+                    <span className="mr-2 shrink-0">-</span>
+                    <span>{bullet}</span>
                   </li>
                 ))}
               </ul>
