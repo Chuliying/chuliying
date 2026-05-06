@@ -32,8 +32,8 @@ const Works = () => {
       <ul>
         {works.map((work) => (
           <li key={work.company} className="mb-11 max-[900px]:mb-11 max-[900px]:pb-6 max-[900px]:border-b max-[900px]:border-dotted max-[900px]:border-canvas last:mb-0 last:border-none">
-            <article className="flex max-[1200px]:flex-col-reverse">
-              <div className="flex-1 lg:w-full lg:flex-auto">
+            <article className="flex gap-10 max-[1200px]:flex-col-reverse max-[1200px]:gap-3">
+              <div className="flex-1">
                 <h3 className="font-inter text-theme text-lg mb-4 max-[900px]:mb-2">
                   {work.company}
                 </h3>
@@ -52,14 +52,14 @@ const Works = () => {
                 </a>
               </div>
 
-              <div className="w-1/2 flex justify-center flex-col max-[1200px]:w-full max-[1200px]:pb-4 max-[1200px]:justify-start max-[900px]:mb-4">
+              <div className="w-1/2 flex items-start max-[1200px]:w-full max-[1200px]:items-start">
                 <Image
                   src={logoMap[work.logo] as string}
                   alt={work.company}
-                  height={work.logoHeight ?? 30}
+                  height={20}
                   width={0}
                   unoptimized
-                  style={{ width: 'auto' }}
+                  style={{ width: 'auto', maxHeight: '20px' }}
                   className="grayscale-[0.8] hover:grayscale-0 transition-all duration-500 max-[900px]:grayscale-0"
                 />
               </div>
