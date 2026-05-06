@@ -30,40 +30,46 @@ const Works = () => {
       </h2>
 
       <ul>
-        {works.map((work) => (
-          <li key={work.company} className="mb-11 max-[900px]:mb-[45px] max-[900px]:pb-[25px] max-[900px]:border-b max-[900px]:border-dotted max-[900px]:border-canvas last:mb-0 last:border-none">
-            <article className="flex max-[1200px]:flex-col-reverse">
-              <div className="flex-1 lg:w-full lg:flex-auto">
-                <h3 className="font-inter text-theme text-[17px] mb-4 sm:mb-2">
-                  {work.company}
-                </h3>
-                <a
-                  href={work.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="block"
-                >
-                  <p className="text-copy text-[16px] leading-[1.65] pb-[7.5px]">
-                    {work.description}
-                  </p>
-                  <span className="text-[14px] text-sub underline">
-                    link to
-                  </span>
-                </a>
+        {works.map((work, index) => (
+          <li key={work.company} className="border-b border-[#e0ddd8] last:border-none">
+            <a
+              href={work.link}
+              target="_blank"
+              rel="noreferrer"
+              className="group flex items-start gap-3 py-[14px] pl-0 pr-1 border-l-2 border-transparent hover:border-sub hover:pl-3 transition-all duration-200"
+            >
+              {/* Index */}
+              <span className="font-inter text-[11px] text-muted group-hover:text-sub transition-colors pt-[2px] shrink-0 tabular-nums w-5 text-right leading-none">
+                {String(index + 1).padStart(2, '0')}
+              </span>
+
+              {/* Content */}
+              <div className="flex-1 min-w-0">
+                <div className="flex items-start justify-between gap-3 mb-[5px]">
+                  <h3 className="font-inter text-theme text-[14px] font-semibold leading-tight">
+                    {work.company}
+                  </h3>
+                  <Image
+                    src={logoMap[work.logo] as string}
+                    alt=""
+                    aria-hidden="true"
+                    height={work.logoHeight ? Math.round(work.logoHeight * 0.55) : 16}
+                    width={0}
+                    unoptimized
+                    style={{ width: 'auto' }}
+                    className="grayscale opacity-35 group-hover:opacity-75 group-hover:grayscale-0 transition-all duration-300 shrink-0 mt-[1px]"
+                  />
+                </div>
+                <p className="text-muted text-[12px] leading-[1.65]">
+                  {work.description}
+                </p>
               </div>
 
-              <div className="w-1/2 flex justify-center flex-col max-[1200px]:w-full max-[1200px]:pb-4 max-[1200px]:justify-start max-[900px]:mb-4">
-                <Image
-                  src={logoMap[work.logo] as string}
-                  alt={work.company}
-                  height={work.logoHeight ?? 30}
-                  width={0}
-                  unoptimized
-                  style={{ width: 'auto' }}
-                  className="grayscale-[0.8] hover:grayscale-0 transition-all duration-500 max-[900px]:grayscale-0"
-                />
-              </div>
-            </article>
+              {/* Arrow — appears on hover */}
+              <span className="text-[12px] text-sub opacity-0 group-hover:opacity-100 transition-opacity duration-200 pt-[2px] shrink-0">
+                ↗
+              </span>
+            </a>
           </li>
         ))}
       </ul>
