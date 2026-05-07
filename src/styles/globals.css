@@ -35,19 +35,28 @@ a {
 @layer utilities {
   .work-plus {
     position: relative;
-    overflow: hidden;
   }
-  .work-plus::after {
+  /* 垂直線：中心對齊右邊緣，向上下各延伸 0.75rem */
+  .work-plus::before {
     content: '';
     position: absolute;
     bottom: -0.75rem;
-    right: -0.75rem;
-    width: 1.5rem;
+    right: 0;
+    transform: translateX(50%);
+    width: 1px;
     height: 1.5rem;
-    background:
-      linear-gradient(#c2c5bc 0 0) 50% / 1px 100%,
-      linear-gradient(#c2c5bc 0 0) 50% / 100% 1px;
-    background-repeat: no-repeat;
+    background: #c2c5bc;
+  }
+  /* 水平線：中心對齊底邊緣，向左右各延伸 0.75rem */
+  .work-plus::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -0.75rem;
+    transform: translateY(50%);
+    width: 1.5rem;
+    height: 1px;
+    background: #c2c5bc;
   }
 }
 
