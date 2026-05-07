@@ -35,16 +35,16 @@ const Works = () => {
       <ul>
         {[...works].reverse().map((work) => (
           <li key={work.company} className="mb-11 max-[900px]:mb-8 max-[900px]:pb-8 max-[900px]:border-b max-[900px]:border-dotted max-[900px]:border-canvas last:mb-0 last:pb-0 last:border-none">
-            <article className="group flex items-center gap-10 max-[1200px]:flex-col-reverse max-[1200px]:items-start max-[1200px]:gap-4">
-              <div className="flex-[2]">
-                <h3 className="font-inter text-theme font-bold text-base mb-3 max-[900px]:mb-2">
-                  {work.company}
-                </h3>
+            <article className="group">
+              <h3 className="font-inter text-theme font-bold text-base mb-3 max-[900px]:mb-2">
+                {work.company}
+              </h3>
+              <div className="flex items-start gap-10 max-[1200px]:gap-4">
                 <a
                   href={work.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="block"
+                  className="flex-[2] block"
                 >
                   <p className="text-copy text-sm mb-4">
                     {work.description}
@@ -53,18 +53,18 @@ const Works = () => {
                     visit
                   </span>
                 </a>
-              </div>
 
-              <div className="flex-1 flex items-center justify-end max-[1200px]:w-full max-[900px]:justify-start">
-                <div className={logoFrameClass}>
-                  <Image
-                    src={logoMap[work.logo] as string}
-                    alt={work.company}
-                    fill
-                    unoptimized
-                    sizes="160px"
-                    className="object-contain object-right max-[900px]:object-left grayscale-[0.8] group-hover:grayscale-0 transition-all duration-500 max-[900px]:grayscale-0"
-                  />
+                <div className="flex-1 flex justify-end max-[1200px]:justify-end max-[900px]:justify-start">
+                  <div className={logoFrameClass}>
+                    <Image
+                      src={logoMap[work.logo] as string}
+                      alt={work.company}
+                      fill
+                      unoptimized
+                      sizes="160px"
+                      className="object-contain object-right max-[900px]:object-left grayscale-[0.8] group-hover:grayscale-0 transition-all duration-500 max-[900px]:grayscale-0"
+                    />
+                  </div>
                 </div>
               </div>
             </article>
