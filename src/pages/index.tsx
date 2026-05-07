@@ -31,7 +31,7 @@ const IndexPage = () => {
       </div>
 
       {/* Column 3: Works */}
-      <div className="relative z-10 flex-[2] max-[900px]:pr-4">
+      <div className="relative z-10 flex-[2] pr-4 overflow-x-hidden">
         <Works />
       </div>
 
