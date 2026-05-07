@@ -35,14 +35,15 @@ a {
 @layer utilities {
   .work-plus {
     position: relative;
+    overflow: hidden;
   }
   .work-plus::after {
     content: '';
     position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 0.75rem;
-    height: 0.75rem;
+    bottom: -0.75rem;
+    right: -0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
     background:
       linear-gradient(#c2c5bc 0 0) 50% / 1px 100%,
       linear-gradient(#c2c5bc 0 0) 50% / 100% 1px;
