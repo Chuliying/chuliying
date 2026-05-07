@@ -39,7 +39,7 @@ const Works = () => {
               <h3 className="font-inter text-theme font-bold text-base mb-3 max-[900px]:mb-2">
                 {work.company}
               </h3>
-              <div className="flex items-start gap-10 max-[1200px]:gap-4">
+              <div className="flex items-start gap-10 max-[1200px]:gap-4 max-[900px]:flex-col-reverse max-[900px]:gap-3">
                 <a
                   href={work.link}
                   target="_blank"
@@ -54,7 +54,7 @@ const Works = () => {
                   </span>
                 </a>
 
-                <div className="flex-1 flex justify-end max-[1200px]:justify-end max-[900px]:justify-start">
+                <div className="flex-1 flex justify-end max-[900px]:justify-start">
                   <div className={logoFrameClass}>
                     <Image
                       src={logoMap[work.logo] as string}
