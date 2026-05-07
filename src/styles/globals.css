@@ -58,6 +58,12 @@ a {
     height: 1px;
     background: #c2c5bc;
   }
+  @media (max-width: 900px) {
+    .work-plus::before,
+    .work-plus::after {
+      display: none;
+    }
+  }
 }
 
 /* Specific features */
