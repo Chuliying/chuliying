@@ -25,7 +25,7 @@ export const experience: ExperienceEntry[] = [
   },
   {
     company: 'EcosTek',
-    title: 'Frontend Lead',
+    title: 'Senior Frontend Engineer',
     period: '2023–2024',
     bullets: [
       'Managed frontend team with agile development processes',
