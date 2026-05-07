@@ -42,7 +42,7 @@ const Works = () => {
               </h3>
 
               {/* Desktop: col 2 rows 1-2 | Mobile: order 1 (top) */}
-              <div className="col-start-2 row-start-1 row-span-2 flex items-start justify-end max-[900px]:order-1 max-[900px]:justify-start max-[900px]:mb-3">
+              <div className="col-start-2 row-start-2 flex items-start justify-end max-[900px]:order-1 max-[900px]:justify-start max-[900px]:mb-3">
                 <div className={logoFrameClass}>
                   <Image
                     src={logoMap[work.logo] as string}
