@@ -25,10 +25,10 @@ const About = () => {
           <div key={entry.company} className="mb-11 max-[900px]:mb-8 last:mb-0">
             <dt className="text-copy text-sm leading-relaxed mb-3">
               <span className="font-bold">{entry.company}</span>
-              <span className="block text-sm text-muted mt-1">
+              <span className="block text-sm text-gray-400 mt-1">
                 {entry.title}
               </span>
-              <span className="block text-muted text-xs font-normal">
+              <span className="block text-gray-400 text-xs font-normal">
                 {entry.period}
               </span>
             </dt>
