@@ -11,6 +11,7 @@ const config: Config = {
         sub: '#d87e57',
         copy: '#333333',
         muted: '#707070',
+        faint: '#8c8c8c',
         canvas: '#c2c5bc',
         surface: '#f4f4f4',
       },
