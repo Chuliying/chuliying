@@ -58,6 +58,10 @@ a {
     height: 1px;
     background: #c2c5bc;
   }
+  .work-plus:last-child::before,
+  .work-plus:last-child::after {
+    display: none;
+  }
   @media (max-width: 900px) {
     .work-plus::before,
     .work-plus::after {
