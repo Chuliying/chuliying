@@ -47,14 +47,14 @@ a {
     height: 1.5rem;
     background: #c2c5bc;
   }
-  /* 水平線：從中心點往左延伸 0.75rem */
+  /* 水平線：中心對齊角點，左右各延伸 0.75rem */
   .work-plus::after {
     content: '';
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -0.75rem;
     transform: translateY(50%);
-    width: 0.75rem;
+    width: 1.5rem;
     height: 1px;
     background: #c2c5bc;
   }
