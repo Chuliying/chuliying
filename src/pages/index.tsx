@@ -7,7 +7,7 @@ import photo from '../../public/images/chuliying.jpg'
 
 const IndexPage = () => {
   return (
-    <main className="fragment bg-surface rounded-tr-[50px] mr-4 mt-4 p-11 pl-32 border border-[#eee] shadow-[2px_2px_5px_rgba(0,0,0,0.15)] flex relative overflow-hidden min-h-[calc(100vh-30px)] transition-transform duration-500 max-[1200px]:p-11 max-[1200px]:pl-16 max-[1200px]:rounded-tr-[45px] max-[900px]:flex-col max-[900px]:p-8 max-[900px]:pl-8">
+    <main className="fragment w-full bg-surface rounded-tr-[50px] mr-4 mt-4 p-11 pl-32 border border-[#eee] shadow-[2px_2px_5px_rgba(0,0,0,0.15)] flex relative overflow-hidden min-h-[calc(100vh-30px)] transition-transform duration-500 max-[1200px]:p-11 max-[1200px]:pl-16 max-[1200px]:rounded-tr-[45px] max-[900px]:flex-col max-[900px]:p-8 max-[900px]:pl-8">
 
       {/* Column 1: Photo + Contact */}
       <div className="relative z-10 pr-32 flex-1 max-w-[300px] max-[900px]:pr-4 max-[900px]:mb-16">
@@ -20,7 +20,7 @@ const IndexPage = () => {
           alt="Chu Liying"
           priority
         />
-        <div className="absolute bottom-0 max-[1200px]:relative max-[1200px]:mt-6">
+        <div className="max-[1200px]:relative mt-4">
           <Contact />
         </div>
       </div>
