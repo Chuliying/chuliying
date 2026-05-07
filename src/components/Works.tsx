@@ -34,7 +34,7 @@ const Works = () => {
 
       <ul>
         {[...works].reverse().map((work) => (
-          <li key={work.company} className="mb-11 max-[900px]:mb-8 max-[900px]:pb-8 max-[900px]:border-b max-[900px]:border-dotted max-[900px]:border-canvas last:mb-0 last:pb-0 last:border-none">
+          <li key={work.company} className="work-plus mb-11 max-[900px]:mb-8 max-[900px]:pb-8 max-[900px]:border-b max-[900px]:border-dotted max-[900px]:border-canvas last:mb-0 last:pb-0 last:border-none">
             <article className="group grid grid-cols-[1fr_auto] gap-x-10 max-[1200px]:gap-x-6 max-[900px]:flex max-[900px]:flex-col">
               {/* Desktop: col 1 row 1 | Mobile: order 2 */}
               <h3 className="col-start-1 row-start-1 font-inter text-theme font-bold text-base mb-3 max-[900px]:order-2 max-[900px]:mb-2">
