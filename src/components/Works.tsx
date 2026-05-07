@@ -65,7 +65,7 @@ const Works = () => {
                 <p className="text-copy text-sm mb-4">
                   {work.description}
                 </p>
-                <span className="text-sm text-sub underline">
+                <span className="text-sm text-sub mb-4 underline">
                   visit
                 </span>
               </a>

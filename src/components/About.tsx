@@ -8,7 +8,7 @@ const About = () => {
         ABOUT
       </h2>
 
-      <div className="mb-11 max-[900px]:mb-8">
+      <div className="mb-16 pb-6 max-[900px]:mb-10">
         {intro.split('\n\n').map((paragraph, i) => (
           <p key={i} className="text-copy text-sm leading-relaxed mb-4 last:mb-0">
             {paragraph}
@@ -16,19 +16,19 @@ const About = () => {
         ))}
       </div>
 
-      <h3 className="text-theme text-sm font-normal mb-6 max-[900px]:mb-4">
+      <h3 className="font-inter text-sub font-bold text-base mb-16 max-[900px]:mb-8 max-[900px]:border-t max-[900px]:border-b max-[900px]:border-sub max-[900px]:py-2">
         EXPERIENCE
       </h3>
 
-      <dl className="mb-11 max-[900px]:mb-8">
+      <dl className="mb-11 max-[1200px]:mb-8 max-[900px]:mb-0">
         {experience.map((entry) => (
           <div key={entry.company} className="mb-11 max-[900px]:mb-8 last:mb-0">
             <dt className="text-copy text-sm leading-relaxed mb-3">
               <span className="font-bold">{entry.company}</span>
-              <span className="block text-sm text-faint mt-1">
+              <span className="block text-sm font-inter text-theme mt-2">
                 {entry.title}
               </span>
-              <span className="block text-faint text-xs font-normal">
+              <span className="block mt-0.5 font-inter text-theme text-xs font-normal">
                 {entry.period}
               </span>
             </dt>
