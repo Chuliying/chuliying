@@ -51,7 +51,7 @@ export const works: Work[] = [
   },
   {
     link: 'https://www.tava.org.tw/',
-    company: 'Tava',
+    company: 'TAVA',
     description:
       'Designed and built a volunteer platform; handled UX design and RESTful API integration end-to-end.',
     logo: '/images/logo/logo-wide.svg',
